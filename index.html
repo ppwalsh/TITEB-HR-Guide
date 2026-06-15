@@ -50,6 +50,16 @@
         .content {
             padding: 40px;
             min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #avatar-container {
+            width: 100%;
+            height: 500px;
+            position: relative;
         }
         
         .footer {
@@ -70,7 +80,7 @@
         </div>
         
         <div class="content">
-            <p>Welcome to the TITEB HR Guide. Ask me anything about HR policies and procedures!</p>
+            <div id="avatar-container"></div>
         </div>
         
         <div class="footer">
@@ -84,10 +94,10 @@
             data-client-key="ck_lcLsHvu5rbKyYyazduPy4"
             data-agent-id="v2_agt_wYMkuu6L"
             data-name="did-agent"
+            data-target-id="avatar-container"
             data-monitor="true"
             data-orientation="horizontal"
-            data-position="right"
-            data-open-mode="expanded">
+            data-position="center">
     </script>
 </body>
 </html>
